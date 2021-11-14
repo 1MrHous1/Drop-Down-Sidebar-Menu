@@ -64,12 +64,12 @@
 .sidebar .nav-links li:hover{
   background: #1d1b31;
 }
-.sidebar .nav-links li .iocn-link{
+.sidebar .nav-links li .icon-link{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.sidebar.close .nav-links li .iocn-link{
+.sidebar.close .nav-links li .icon-link{
   display: block
 }
 .sidebar .nav-links li i{
@@ -209,7 +209,7 @@
   font-size: 12px;
 }
 .home-section{
-  position: relative;
+  position: fixed;
   background: #E4E9F7;
   height: 100vh;
   left: 260px;
@@ -223,7 +223,8 @@
 .home-section .home-content{
   height: 60px;
   display: flex;
-  align-items: center;
+  
+  /* align-items: center; */
 }
 .home-section .home-content .bx-menu,
 .home-section .home-content .text{
@@ -238,6 +239,13 @@
   font-size: 26px;
   font-weight: 600;
 }
+.text{
+    /* display: flex; */
+    
+    top: 20px;
+}
+
+
 @media (max-width: 420px) {
   .sidebar.close .nav-links li .sub-menu{
     display: none;
